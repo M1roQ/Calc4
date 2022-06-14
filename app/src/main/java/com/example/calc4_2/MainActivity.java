@@ -43,7 +43,10 @@ public class MainActivity extends AppCompatActivity {
                     val1 = Float.parseFloat(String.valueOf(s));
                 } catch (final NumberFormatException e) {
                 }
-                result = val1 + val2;
+                String text = spinner.getSelectedItem().toString();
+                if (text.equals("+")){
+                    result = val1 + val2;
+                }
                 res.setText("" + result);
             }
 
@@ -53,6 +56,7 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
+
             }
         });
 
@@ -64,7 +68,10 @@ public class MainActivity extends AppCompatActivity {
                     val2 = Float.parseFloat(String.valueOf(s));
                 } catch (final NumberFormatException e) {
                 }
-                result = val1 + val2;
+                String text = spinner.getSelectedItem().toString();
+                if (text.equals("+")){
+                    result = val1 + val2;
+                }
                 res.setText("" + result);
             }
 
@@ -103,5 +110,4 @@ public class MainActivity extends AppCompatActivity {
         };
         spinner.setOnItemSelectedListener(itemSelectedListener);
     }
-
 }
