@@ -47,6 +47,15 @@ public class MainActivity extends AppCompatActivity {
                 if (text.equals("+")){
                     result = val1 + val2;
                 }
+                else if (text.equals("-")){
+                    result = val1 - val2;
+                }
+                else if (text.equals("/")){
+                    result = val1 / val2;
+                }
+                else if (text.equals("*")){
+                    result = val1 * val2;
+                }
                 res.setText("" + result);
             }
 
@@ -71,6 +80,15 @@ public class MainActivity extends AppCompatActivity {
                 String text = spinner.getSelectedItem().toString();
                 if (text.equals("+")){
                     result = val1 + val2;
+                }
+                else if (text.equals("-")){
+                    result = val1 - val2;
+                }
+                else if (text.equals("/")){
+                    result = val1 / val2;
+                }
+                else if (text.equals("*")){
+                    result = val1 * val2;
                 }
                 res.setText("" + result);
             }
